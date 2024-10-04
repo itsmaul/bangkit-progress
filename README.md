@@ -25,7 +25,7 @@ Repository ini berisi tentang proyek proses analisis data dari dicoding untuk tu
 ## Penggunaan
 1. Masuk ke Direktori Proyek (Local):
     <br>
-    `cd bike-sharing/dashboard/`
+    `cd dashboard`
     <br>
     `streamlit run dashboard.py`
 
