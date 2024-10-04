@@ -17,6 +17,7 @@ Repository ini berisi tentang proyek proses analisis data dari dicoding untuk tu
 1. Clone repository ini ke komputer lokal Anda menggunakan perintah berikut:
 `git clone https://github.com/mgrzn/submissionDicoding.git`
 2. Pastikan Anda mempunyai lingkungan Python yang sesuai requirements yang ada. Anda dapat menginstal dengan menjalankan perintah berikut:
+<br>
 `pip install streamlit`
 <br>
 `pip install -r requirements.txt`
