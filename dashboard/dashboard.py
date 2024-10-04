@@ -57,8 +57,8 @@ def sum_season (day_df):
     season_total = day_df.groupby('season')['total'].sum()
     return season_total
 
-hours_df = pd.read_csv("C:/Users/ASUS/Documents/TUGAS/kuliah/bangkit/analisisdata_BikeSharing/dashboard/hour_new.csv")
-days_df = pd.read_csv("C:/Users/ASUS/Documents/TUGAS/kuliah/bangkit/analisisdata_BikeSharing/dashboard/day_new.csv")
+hours_df = pd.read_csv("https://raw.githubusercontent.com/itsmaul/bangkit-progress/main/dashboard/hour_new.csv")
+days_df = pd.read_csv("https://raw.githubusercontent.com/itsmaul/bangkit-progress/main/dashboard/day_new.csv")
 
 hours_df.sort_values(by="dates", inplace=True)
 hours_df.reset_index(inplace=True)
