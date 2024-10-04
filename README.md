@@ -1,7 +1,7 @@
 # Proyek Analisis Data: Bike-Sharing Dataset
 
 ## Dashboard Link
-
+https://bikesharing-rismaauliya.streamlit.app/
 
 ## Deskripsi
 Repository ini berisi tentang proyek proses analisis data dari dicoding untuk tugas akhir setelah mempelajari berbagai topik mengenai proses analisis data seperti berikut:
