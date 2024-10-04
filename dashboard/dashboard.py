@@ -217,7 +217,7 @@ sns.barplot(
         y="total",
         x="season",
         data=days_df.sort_values(by="season", ascending=False),
-        palette=["#D3D3D3", "#D3D3D3", "#D3D3D3", "#90CAF9"],
+        palette=["#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"],
         ax=ax
     )
 ax.set_title("Chart by Season", loc="center", fontsize=50)
