@@ -164,6 +164,7 @@ ax[1].tick_params(axis='y', labelsize=15)
 ax[1].tick_params(axis='x', labelsize=15) 
 
 st.pyplot(fig)
+st.write("Berdasarkan visualisasi bar chart, peminjam paling banyak terdapat pada pukul 17:00 dan peminjam paling sedikit pada pukul 4:00. Hal tersebut juga ditandai dengan perbedaan warna bar agar terlihat lebih jelas.")
 
 st.subheader("Total peminjaman sepeda lebih banyak pada tahun berapa?")
 
@@ -177,6 +178,7 @@ ax.tick_params(axis='x', labelsize=14)
 ax.tick_params(axis='y', labelsize=14)
 
 st.pyplot(fig)
+st.write("Berdasarkan visualisasi bar chart, peminjaman pada tahun 2011 memiliki jumlah yang terdapat pada rentang 5000-6000, sedangkan peminjaman pada tahun 2012 memiliki jumlah yang terdapat pada rentang 3000-4000. Hal tersebut juga ditandai dengan perbedaan warna bar agar terlihat lebih jelas. Jadi, total peminjaman sepeda lebih banyak terjadi pada tahun 2012.")
 
 st.subheader("Bagaimana tren peminjaman sepeda dari tahun 2011 ke tahun 2012?")
 
@@ -191,6 +193,7 @@ ax.tick_params(axis='x', labelsize=14)
 ax.tick_params(axis='y', labelsize=14)
 
 st.pyplot(fig)
+st.write("Berdasarkan visualisasi scatter chart, tren peminjaman sepeda dari tahun 2011 ke 2012 mengalami peningkatan.")
 
 st.subheader("Berapa persentase orang yang meminjam sepeda saat weekdays dan weekend?")
 
@@ -204,5 +207,26 @@ ax.tick_params(axis='x', labelsize=35)
 ax.tick_params(axis='y', labelsize=30)
 
 st.pyplot(fig)
+st.write("Berdasarkan visualisasi bar chart, peminjaman pada hari kerja lebih banyak dibandingkan hari libur. Hal tersebut juga ditandai dengan perbedaan warna bar agar terlihat lebih jelas.")
+
+st.subheader("Pada musim apa peminjaman sepeda paling sedikit?")
+
+# Bar chart
+fig, ax = plt.subplots(figsize=(10, 5))
+sns.barplot(
+        y="total",
+        x="season",
+        data=days_df.sort_values(by="season", ascending=False),
+        palette=["#D3D3D3", "#D3D3D3", "#D3D3D3", "#90CAF9"],
+        ax=ax
+    )
+ax.set_title("Chart by Season", loc="center", fontsize=50)
+ax.set_ylabel(None)
+ax.set_xlabel(None)
+ax.tick_params(axis='x', labelsize=35)
+ax.tick_params(axis='y', labelsize=30)
+
+st.pyplot(fig)
+st.write("Berdasarkan visualisasi bar chart, total peminjaman sepeda paling sedikit terjadi pada musim dingin.")
 
 st.caption('Copyright (c) Risma Auliya Salsabilla 2024')
