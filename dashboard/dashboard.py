@@ -195,20 +195,6 @@ ax.tick_params(axis='y', labelsize=14)
 st.pyplot(fig)
 st.write("Berdasarkan visualisasi scatter chart, tren peminjaman sepeda dari tahun 2011 ke 2012 mengalami peningkatan.")
 
-st.subheader("Berapa persentase orang yang meminjam sepeda saat weekdays dan weekend?")
-
-# Bar chart
-fig, ax = plt.subplots(figsize=(10, 7))
-sns.barplot(x="days_category", y="total", data=days_df.sort_values(by="days_category", ascending=True), palette=["#72BCD4", "#D3D3D3"], ax=ax)
-ax.set_title("Chart by Days Category", loc="center", fontsize=50)
-ax.set_ylabel("Total", fontsize=30)
-ax.set_xlabel("Days Category", fontsize=30)
-ax.tick_params(axis='x', labelsize=35)
-ax.tick_params(axis='y', labelsize=30)
-
-st.pyplot(fig)
-st.write("Berdasarkan visualisasi bar chart, peminjaman pada hari kerja lebih banyak dibandingkan hari libur. Hal tersebut juga ditandai dengan perbedaan warna bar agar terlihat lebih jelas.")
-
 st.subheader("Pada musim apa peminjaman sepeda paling sedikit?")
 
 # Bar chart
